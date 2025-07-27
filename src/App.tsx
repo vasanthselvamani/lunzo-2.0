@@ -469,19 +469,21 @@ function App() {
                 <div>
                   <input
                     type="text"
+                    name='name'
                     placeholder="Your Name"
-                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]"
+                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]" required
                   />
                 </div>
                 <div>
                   <input
-                    type="email"
-                    placeholder="Your Email"
-                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]"
+                    type="number"
+                    name='phone'
+                    placeholder="Your phone number"
+                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]" required
                   />
                 </div>
                 <div>
-                  <select className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]">
+                  <select className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26]" name='service' required>
                     <option>Select Service</option>
                     <option>Digital Marketing</option>
                     <option>Video Editing</option>
@@ -493,7 +495,7 @@ function App() {
                   <textarea
                     rows={4}
                     placeholder="Your Message"
-                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26] resize-none"
+                    className="w-full px-6 py-4 bg-white rounded-xl border-0 focus:ring-2 focus:ring-[#4ADEDE] outline-none text-[#1E1F26] resize-none" name='message' required
                   ></textarea>
                 </div>
                 <button className="w-full bg-[#4ADEDE] text-[#1E1F26] py-4 rounded-xl font-bold text-lg hover:bg-white transition-all duration-300 transform hover:scale-105">
