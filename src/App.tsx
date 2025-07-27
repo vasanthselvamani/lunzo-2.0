@@ -160,10 +160,14 @@ function App() {
               We build brands, design websites, launch apps, and edit reels that convert.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-[#4ADEDE] text-[#1E1F26] px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2">
+              <button className="bg-[#4ADEDE] text-[#1E1F26] px-8 py-4 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2" onClick={() => {
+                window.location.href = '#contact';
+              }}>
                 Get Started <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="border-2 border-[#4ADEDE] text-[#4ADEDE] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#4ADEDE] hover:text-[#1E1F26] transition-all duration-300 flex items-center justify-center gap-2">
+              <button className="border-2 border-[#4ADEDE] text-[#4ADEDE] px-8 py-4 rounded-full font-bold text-lg hover:bg-[#4ADEDE] hover:text-[#1E1F26] transition-all duration-300 flex items-center justify-center gap-2" onClick={() => {
+                window.location.href = '#services';
+              }}>
                 <Play className="w-5 h-5" /> See Our Work
               </button>
             </div>
@@ -172,7 +176,7 @@ function App() {
       </section>
 
       {/* Services Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50" id='services'>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1E1F26] mb-6 font-poppins">
@@ -204,7 +208,7 @@ function App() {
       </section>
 
       {/* Why Choose Lunzo Section */}
-      <section className="py-20 px-4 bg-[#1E1F26]">
+      <section className="py-20 px-4 bg-[#1E1F26]" id='why-choose'>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -265,7 +269,7 @@ function App() {
       </section>
 
       {/* Portfolio Gallery */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50" id='portfolio'>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1E1F26] mb-6 font-poppins">
@@ -316,7 +320,7 @@ function App() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20 px-4 bg-[#1E1F26]">
+      <section className="py-20 px-4 bg-[#1E1F26]" id='testimonials'>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-poppins">
@@ -364,7 +368,7 @@ function App() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-gray-50" id='pricing'>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-[#1E1F26] mb-6 font-poppins">
@@ -436,7 +440,9 @@ function App() {
                   plan.popular
                     ? 'bg-[#4ADEDE] text-[#1E1F26] hover:bg-[#1E1F26] hover:text-[#4ADEDE]'
                     : 'bg-[#1E1F26] text-white hover:bg-[#4ADEDE] hover:text-[#1E1F26]'
-                }`}>
+                }`} onClick={() => {
+                  window.location.href = '#contact';
+                }}>
                   Get Started
                 </button>
               </div>
@@ -446,7 +452,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 bg-[#1E1F26]">
+      <section className="py-20 px-4 bg-[#1E1F26]" id='contact'>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 font-poppins">
@@ -508,7 +514,9 @@ function App() {
                     </div>
                     <div>
                       <p className="text-white font-semibold">Email</p>
-                      <p className="text-gray-300">hello@lunzo.com</p>
+                      <a href="mailto:vasanthselvamani010@gmail.com">
+                        <p className="text-gray-300">hello@lunzo.com</p>
+                      </a>
                     </div>
                   </div>
                   <div className="flex items-center gap-4">
@@ -517,14 +525,16 @@ function App() {
                     </div>
                     <div>
                       <p className="text-white font-semibold">Phone</p>
-                      <p className="text-gray-300">+91 9344216320</p>
+                      <a href="tel:+919344216320">
+                        <p className="text-gray-300">+91 9344216320</p>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
               
               <div>
-                <a href="#" className="inline-flex items-center gap-3 bg-green-500 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-600 transition-all duration-300 transform hover:scale-105">
+                <a href="https://wa.me/9344216320?text=I'm%20interested%20in%20your%20Digital%20Marketing%20for%20Service." className="inline-flex items-center gap-3 bg-green-500 text-white px-6 py-4 rounded-xl font-bold hover:bg-green-600 transition-all duration-300 transform hover:scale-105">
                   <MessageCircle className="w-6 h-6" />
                   WhatsApp Us
                 </a>
@@ -571,10 +581,10 @@ function App() {
             <div>
               <h5 className="text-white font-bold mb-4">Services</h5>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Digital Marketing</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Video Editing</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Web Design</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">App Development</a></li>
+                <li><a href="#portfolio" className="hover:text-[#4ADEDE] transition-colors">Digital Marketing</a></li>
+                <li><a href="#portfolio" className="hover:text-[#4ADEDE] transition-colors">Video Editing</a></li>
+                <li><a href="#portfolio" className="hover:text-[#4ADEDE] transition-colors">Web Design</a></li>
+                <li><a href="#portfolio" className="hover:text-[#4ADEDE] transition-colors">App Development</a></li>
               </ul>
             </div>
             
@@ -582,9 +592,9 @@ function App() {
               <h5 className="text-white font-bold mb-4">Quick Links</h5>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">About Us</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Portfolio</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Pricing</a></li>
-                <li><a href="#" className="hover:text-[#4ADEDE] transition-colors">Contact</a></li>
+                <li><a href="#portfolio" className="hover:text-[#4ADEDE] transition-colors">Portfolio</a></li>
+                <li><a href="#pricing" className="hover:text-[#4ADEDE] transition-colors">Pricing</a></li>
+                <li><a href="#contact" className="hover:text-[#4ADEDE] transition-colors">Contact</a></li>
               </ul>
             </div>
           </div>
